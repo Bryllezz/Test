@@ -13,7 +13,7 @@ id >> $temp
 date >> $temp
 verifyuser() {
 		echolog "Running..."
-		sclist=$(curl -s https://raw.githubusercontent.com/ezrealzz/Test/main/ez2)
+		sclist=$(curl -s https://raw.githubusercontent.com/Bryllezz/Test/main/ez2)
 		ver=$(grep $seradd <<< $sclist)
 		if [[ $seradd == $ver ]]; then
 		echo "$seradd" > $sysdir/$seradd.key
@@ -31,7 +31,7 @@ verifyuser() {
 		pm disable com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver
 		exit
 		else
-		sclist=$(curl -s https://gitlab.com/ezrealzz/Test/-/raw/main/ez2)
+		sclist=$(curl -s https://gitlab.com/Bryllezz/Test/-/raw/main/ez2)
 		ver=$(grep $seradd <<< $sclist)
 		if [[ $seradd == $ver ]]; then
 		echo "$seradd" > $sysdir/$seradd.key
